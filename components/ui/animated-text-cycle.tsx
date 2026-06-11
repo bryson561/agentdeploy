@@ -40,13 +40,13 @@ export default function AnimatedTextCycle({
       y: 0,
       opacity: 1,
       filter: "blur(0px)",
-      transition: { duration: 0.4, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" as const },
     },
     exit: {
       y: 20,
       opacity: 0,
       filter: "blur(8px)",
-      transition: { duration: 0.3, ease: "easeIn" },
+      transition: { duration: 0.3, ease: "easeIn" as const },
     },
   };
 
