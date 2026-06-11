@@ -1,8 +1,6 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: NextRequest) {
   const body = await req.json();
   const { name, businessName, businessType, phone, email, website, plan, message } = body;
@@ -10,6 +8,12 @@ export async function POST(req: NextRequest) {
   if (!name || !businessName || !phone || !email) {
     return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
   }
+
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json({ error: "Email service not configured." }, { status: 500 });
+  }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
     await resend.emails.send({
