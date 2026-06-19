@@ -31,7 +31,7 @@ export function ProblemSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-xs text-indigo-400 uppercase tracking-widest mb-4 font-medium">
+          <p className="text-xs text-emerald-400 uppercase tracking-widest mb-4 font-medium">
             The Problem
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
@@ -54,8 +54,8 @@ export function ProblemSection() {
               transition={{ delay: i * 0.12 }}
               className="relative p-7 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.12] transition-colors group"
             >
-              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-5">
-                <p.icon className="w-5 h-5 text-indigo-400" />
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-5">
+                <p.icon className="w-5 h-5 text-emerald-400" />
               </div>
               <h3 className="text-white font-semibold text-lg mb-3 leading-snug">
                 {p.title}

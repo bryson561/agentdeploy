@@ -69,7 +69,7 @@ export function PricingSection() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <p className="text-xs text-indigo-400 uppercase tracking-widest mb-4 font-medium">
+          <p className="text-xs text-emerald-400 uppercase tracking-widest mb-4 font-medium">
             Pricing
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -91,12 +91,12 @@ export function PricingSection() {
               className={cn(
                 "relative p-7 rounded-2xl border transition-all",
                 plan.highlighted
-                  ? "bg-indigo-600/10 border-indigo-500/40 shadow-lg shadow-indigo-500/5"
+                  ? "bg-emerald-600/10 border-emerald-500/40 shadow-lg shadow-emerald-500/5"
                   : "bg-white/[0.02] border-white/[0.06] hover:border-white/[0.12]"
               )}
             >
               {plan.badge && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-indigo-600 text-xs text-white font-medium whitespace-nowrap">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-emerald-600 text-xs text-white font-medium whitespace-nowrap">
                   {plan.badge}
                 </div>
               )}
@@ -118,7 +118,7 @@ export function PricingSection() {
                     <Check
                       className={cn(
                         "w-4 h-4 mt-0.5 flex-shrink-0",
-                        plan.highlighted ? "text-indigo-400" : "text-white/35"
+                        plan.highlighted ? "text-emerald-400" : "text-white/35"
                       )}
                     />
                     {f}
@@ -131,7 +131,7 @@ export function PricingSection() {
                 className={cn(
                   "flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-medium transition-all",
                   plan.highlighted
-                    ? "bg-indigo-600 hover:bg-indigo-500 text-white"
+                    ? "bg-emerald-600 hover:bg-emerald-500 text-white"
                     : "border border-white/[0.1] text-white/60 hover:text-white hover:border-white/20"
                 )}
               >

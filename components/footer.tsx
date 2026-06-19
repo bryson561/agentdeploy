@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2.5 mb-3">
-              <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center">
+              <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
                 <Bot className="w-4 h-4 text-white" />
               </div>
               <span className="text-white font-semibold tracking-tight">
@@ -16,7 +16,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-white/40 text-sm max-w-xs leading-relaxed">
-              AI chat agents for local trade businesses. Fully managed, done-for-you. Live in 48 hours.
+              AI chat agents for local businesses. Fully managed, done-for-you. Live in 48 hours.
             </p>
           </div>
 
@@ -29,16 +29,15 @@ export function Footer() {
             <div className="space-y-3">
               <p className="text-white/20 text-xs uppercase tracking-widest">Company</p>
               <Link href="/contact" className="block hover:text-white transition-colors">Get Started</Link>
-              <Link href="/contact" className="block hover:text-white transition-colors">Sign Up</Link>
             </div>
           </nav>
         </div>
 
         <div className="border-t border-white/[0.04] mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/25 text-xs">
-            © {new Date().getFullYear()} AgentDeploy. All rights reserved.
+            &copy; {new Date().getFullYear()} AgentDeploy. All rights reserved.
           </p>
-          <p className="text-white/25 text-xs">Built for trades. Powered by AI.</p>
+          <p className="text-white/25 text-xs">Built for local businesses. Powered by AI.</p>
         </div>
       </div>
     </footer>

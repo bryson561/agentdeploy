@@ -11,8 +11,9 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="bg-[#030303] border-y border-white/[0.05]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+    <section className="bg-[#030303] border-y border-white/[0.05] relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/[0.02] via-transparent to-teal-600/[0.02] pointer-events-none" />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           {stats.map((stat, i) => (
             <motion.div

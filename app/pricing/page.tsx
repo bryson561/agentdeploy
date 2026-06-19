@@ -46,7 +46,7 @@ export default function PricingPage() {
       <Navbar />
 
       <div className="pt-32 pb-8 px-4 text-center">
-        <p className="text-xs text-indigo-400 uppercase tracking-widest mb-4 font-medium">
+        <p className="text-xs text-emerald-400 uppercase tracking-widest mb-4 font-medium">
           Pricing
         </p>
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">

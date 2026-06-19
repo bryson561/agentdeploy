@@ -28,7 +28,7 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center">
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
               <Bot className="w-4 h-4 text-white" />
             </div>
             <span className="text-white font-semibold tracking-tight">
@@ -54,7 +54,7 @@ export function Navbar() {
           <div className="hidden md:block">
             <Link
               href="/contact"
-              className="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium transition-colors"
+              className="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium transition-colors"
             >
               Get Started
             </Link>
@@ -94,7 +94,7 @@ export function Navbar() {
               ))}
               <Link
                 href="/contact"
-                className="block w-full text-center px-4 py-3 rounded-lg bg-indigo-600 text-white text-sm font-medium mt-3"
+                className="block w-full text-center px-4 py-3 rounded-lg bg-emerald-600 text-white text-sm font-medium mt-3"
                 onClick={() => setMobileOpen(false)}
               >
                 Get Started

@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
       <Navbar />
 
       <div className="pt-32 pb-8 px-4 text-center">
-        <p className="text-xs text-indigo-400 uppercase tracking-widest mb-4 font-medium">
+        <p className="text-xs text-emerald-400 uppercase tracking-widest mb-4 font-medium">
           The Process
         </p>
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
@@ -67,7 +67,7 @@ export default function HowItWorksPage() {
                 className="p-6 rounded-xl bg-white/[0.02] border border-white/[0.06]"
               >
                 <div className="flex gap-4 items-start">
-                  <span className="text-xs font-mono text-indigo-500/50 pt-1 tracking-widest">
+                  <span className="text-xs font-mono text-emerald-500/50 pt-1 tracking-widest">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>

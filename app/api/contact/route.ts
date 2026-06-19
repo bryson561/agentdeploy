@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
       subject: `New Lead: ${businessName} (${businessType})`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 24px;">
-          <h2 style="color: #4f46e5; margin-bottom: 4px;">New AgentDeploy Lead</h2>
+          <h2 style="color: #059669; margin-bottom: 4px;">New AgentDeploy Lead</h2>
           <p style="color: #6b7280; margin-top: 0;">Submitted from the website contact form</p>
           <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 24px 0;" />
 

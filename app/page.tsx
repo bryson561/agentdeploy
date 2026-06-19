@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/sections/hero";
 import { ScrollStatsSection } from "@/components/sections/scroll-stats";
+import { ProductShowcase } from "@/components/sections/product-showcase";
 import { ProblemSection } from "@/components/sections/problem";
 import { ChatDemoSection } from "@/components/sections/chat-demo";
 import { ProcessSection } from "@/components/sections/process";
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ScrollStatsSection />
+      <ProductShowcase />
       <ProblemSection />
       <ChatDemoSection />
       <ProcessSection />

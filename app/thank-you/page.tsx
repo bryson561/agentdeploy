@@ -74,7 +74,7 @@ export default function ThankYouPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition-all shadow-lg shadow-indigo-500/20 text-base"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-medium transition-all shadow-lg shadow-emerald-500/20 text-base"
           >
             Fill Out the Intake Form
             <ArrowRight className="w-5 h-5" />
@@ -106,7 +106,7 @@ export default function ThankYouPage() {
                 key={step.title}
                 className={`flex gap-5 p-6 rounded-xl border transition-all ${
                   step.highlight
-                    ? "bg-indigo-600/10 border-indigo-500/30"
+                    ? "bg-emerald-600/10 border-emerald-500/30"
                     : "bg-white/[0.02] border-white/[0.06]"
                 }`}
               >
@@ -114,25 +114,25 @@ export default function ThankYouPage() {
                   <div
                     className={`w-10 h-10 rounded-full flex items-center justify-center ${
                       step.highlight
-                        ? "bg-indigo-500/20 border border-indigo-500/30"
+                        ? "bg-emerald-500/20 border border-emerald-500/30"
                         : "bg-white/[0.04] border border-white/[0.08]"
                     }`}
                   >
                     <step.icon
                       className={`w-5 h-5 ${
-                        step.highlight ? "text-indigo-400" : "text-white/40"
+                        step.highlight ? "text-emerald-400" : "text-white/40"
                       }`}
                     />
                   </div>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-xs font-mono text-indigo-500/50 tracking-widest">
+                    <span className="text-xs font-mono text-emerald-500/50 tracking-widest">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <h3 className="text-white font-semibold">{step.title}</h3>
                     {step.highlight && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-medium">
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-medium">
                         Your turn
                       </span>
                     )}
@@ -157,7 +157,7 @@ export default function ThankYouPage() {
               Questions? Email us at{" "}
               <a
                 href="mailto:officeagentdeploy@gmail.com"
-                className="text-indigo-400 hover:text-indigo-300 transition-colors"
+                className="text-emerald-400 hover:text-emerald-300 transition-colors"
               >
                 officeagentdeploy@gmail.com
               </a>{" "}

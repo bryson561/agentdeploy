@@ -46,7 +46,7 @@ export function ProcessSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-xs text-indigo-400 uppercase tracking-widest mb-4 font-medium">
+          <p className="text-xs text-emerald-400 uppercase tracking-widest mb-4 font-medium">
             The Process
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
@@ -74,14 +74,14 @@ export function ProcessSection() {
               )}
 
               <div className="flex-shrink-0 z-10">
-                <div className="w-10 h-10 rounded-full bg-[#0c0c14] border border-white/[0.1] group-hover:border-indigo-500/40 transition-colors flex items-center justify-center">
-                  <step.icon className="w-4 h-4 text-indigo-400" />
+                <div className="w-10 h-10 rounded-full bg-[#0c0c14] border border-white/[0.1] group-hover:border-emerald-500/40 transition-colors flex items-center justify-center">
+                  <step.icon className="w-4 h-4 text-emerald-400" />
                 </div>
               </div>
 
               <div className="pb-10">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-xs font-mono text-indigo-500/50 tracking-widest">
+                  <span className="text-xs font-mono text-emerald-500/50 tracking-widest">
                     {step.number}
                   </span>
                   <h3 className="text-white font-semibold text-lg leading-snug">

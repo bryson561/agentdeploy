@@ -54,9 +54,9 @@ const plans = [
     period: "/mo",
     setup: "+ $149 setup",
     tagline: "Everything you need to start capturing leads around the clock.",
-    color: "from-indigo-500 to-indigo-600",
-    border: "border-indigo-500/20",
-    glow: "bg-indigo-500/5",
+    color: "from-emerald-500 to-emerald-600",
+    border: "border-emerald-500/20",
+    glow: "bg-emerald-500/5",
     badge: null,
     href: STRIPE_STARTER,
     features: [
@@ -74,9 +74,9 @@ const plans = [
     period: "/mo",
     setup: "+ $149 setup",
     tagline: "Missed-call text-back, booking, CRM pipeline & monthly lead report.",
-    color: "from-violet-500 to-violet-600",
-    border: "border-violet-500/30",
-    glow: "bg-violet-500/8",
+    color: "from-teal-500 to-teal-600",
+    border: "border-teal-500/30",
+    glow: "bg-teal-500/8",
     badge: "Most Popular",
     href: STRIPE_GROWTH,
     features: [
@@ -127,7 +127,7 @@ export default function GetStartedPage() {
       <section className="relative pt-36 pb-20 px-4 text-center">
         {/* Glow */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px]" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-emerald-600/10 rounded-full blur-[100px]" />
         </div>
 
         <motion.div
@@ -136,16 +136,16 @@ export default function GetStartedPage() {
           transition={{ duration: 0.6 }}
           className="relative max-w-3xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/25 bg-indigo-500/10 mb-6">
-            <Bot className="w-3.5 h-3.5 text-indigo-400" />
-            <span className="text-xs text-indigo-300 font-medium tracking-wide">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/25 bg-emerald-500/10 mb-6">
+            <Bot className="w-3.5 h-3.5 text-emerald-400" />
+            <span className="text-xs text-emerald-300 font-medium tracking-wide">
               3 steps · live in 48 hours
             </span>
           </div>
 
           <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.08] mb-5">
             Your AI agent,{" "}
-            <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
               up and running
             </span>
             <br />this week.
@@ -177,8 +177,8 @@ export default function GetStartedPage() {
                 </span>
 
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-5 h-5 text-indigo-400" />
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-5 h-5 text-emerald-400" />
                   </div>
                   <span className="mt-2.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs text-white/40 font-medium">
                     {step.tag}
@@ -210,7 +210,7 @@ export default function GetStartedPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {trust.map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2.5">
-                <Icon className="w-4 h-4 text-indigo-400 flex-shrink-0" />
+                <Icon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span className="text-white/55 text-sm">{text}</span>
               </div>
             ))}
@@ -226,7 +226,7 @@ export default function GetStartedPage() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-center mb-12"
         >
-          <p className="text-xs text-indigo-400 uppercase tracking-widest mb-3 font-medium">
+          <p className="text-xs text-emerald-400 uppercase tracking-widest mb-3 font-medium">
             Choose your plan
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
@@ -247,20 +247,20 @@ export default function GetStartedPage() {
               className={cn(
                 "relative rounded-2xl border p-6 flex flex-col",
                 plan.badge
-                  ? "border-violet-500/40 bg-[#0d0d1a]"
+                  ? "border-teal-500/40 bg-[#0d0d1a]"
                   : `${plan.border} bg-[#0c0c14]`,
               )}
             >
               {/* Popular badge */}
               {plan.badge && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 text-white text-xs font-semibold shadow-lg">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-teal-500 to-emerald-500 text-white text-xs font-semibold shadow-lg">
                   {plan.badge}
                 </div>
               )}
 
               {/* Glow behind popular */}
               {plan.badge && (
-                <div className="absolute inset-0 rounded-2xl bg-violet-500/5 pointer-events-none" />
+                <div className="absolute inset-0 rounded-2xl bg-teal-500/5 pointer-events-none" />
               )}
 
               {/* Header */}
@@ -283,7 +283,7 @@ export default function GetStartedPage() {
               <ul className="space-y-2.5 mb-7 flex-1">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
-                    <CheckCircle className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
                     <span className="text-white/65 text-sm">{f}</span>
                   </li>
                 ))}
@@ -297,7 +297,7 @@ export default function GetStartedPage() {
                 className={cn(
                   "group flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-sm font-semibold transition-all",
                   plan.badge
-                    ? "bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white shadow-lg shadow-violet-900/30"
+                    ? "bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white shadow-lg shadow-teal-900/30"
                     : "bg-white/[0.06] hover:bg-white/[0.1] text-white border border-white/[0.1]"
                 )}
               >
@@ -315,12 +315,12 @@ export default function GetStartedPage() {
 
       {/* ── INTAKE FORM EXPLAINER ── */}
       <section className="px-4 pb-32 max-w-3xl mx-auto text-center">
-        <div className="relative rounded-2xl border border-indigo-500/15 bg-[#0c0c14] p-10 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/5 via-transparent to-violet-600/5 pointer-events-none" />
+        <div className="relative rounded-2xl border border-emerald-500/15 bg-[#0c0c14] p-10 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/5 via-transparent to-teal-600/5 pointer-events-none" />
 
           <div className="relative">
-            <div className="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mx-auto mb-5">
-              <ClipboardList className="w-6 h-6 text-indigo-400" />
+            <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-5">
+              <ClipboardList className="w-6 h-6 text-emerald-400" />
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-3">
@@ -379,7 +379,7 @@ export default function GetStartedPage() {
           </Link>
           <a
             href="mailto:officeagentdeploy@gmail.com"
-            className="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium transition-all"
+            className="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium transition-all"
           >
             Email Us Directly
           </a>
