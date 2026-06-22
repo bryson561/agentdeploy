@@ -338,9 +338,9 @@ export function ScrollStatsSection() {
   // Smooth the raw scroll progress so the panel transitions glide instead of
   // tracking the scroll wheel 1:1 (removes the jumpy feel).
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 120,
-    damping: 30,
-    restDelta: 0.001,
+    stiffness: 15,
+    damping: 15,
+    restDelta: 0.0001,
   });
   const prefersReduced = useReducedMotion();
 
