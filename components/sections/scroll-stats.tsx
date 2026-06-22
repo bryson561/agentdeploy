@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import {
   motion,
   useScroll,
+  useSpring,
   useTransform,
   useReducedMotion,
   type MotionValue,
@@ -334,6 +335,13 @@ export function ScrollStatsSection() {
     target: containerRef,
     offset: ["start start", "end end"],
   });
+  // Smooth the raw scroll progress so the panel transitions glide instead of
+  // tracking the scroll wheel 1:1 (removes the jumpy feel).
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 30,
+    restDelta: 0.001,
+  });
   const prefersReduced = useReducedMotion();
 
   if (prefersReduced) {
@@ -363,7 +371,7 @@ export function ScrollStatsSection() {
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(16,185,129,0.04),transparent_60%)]" />
 
-        <ProgressBar scrollYProgress={scrollYProgress} />
+        <ProgressBar scrollYProgress={smoothProgress} />
 
         <div className="h-full flex items-center max-w-6xl mx-auto px-8 md:px-16 lg:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
@@ -374,16 +382,16 @@ export function ScrollStatsSection() {
                   feature={feature}
                   index={i}
                   total={features.length}
-                  scrollYProgress={scrollYProgress}
+                  scrollYProgress={smoothProgress}
                 />
               ))}
             </div>
 
             <div className="relative h-[300px] md:h-[400px]">
-              <VisualMissed scrollYProgress={scrollYProgress} />
-              <VisualRespond scrollYProgress={scrollYProgress} />
-              <VisualAlwaysOn scrollYProgress={scrollYProgress} />
-              <VisualLaunch scrollYProgress={scrollYProgress} />
+              <VisualMissed scrollYProgress={smoothProgress} />
+              <VisualRespond scrollYProgress={smoothProgress} />
+              <VisualAlwaysOn scrollYProgress={smoothProgress} />
+              <VisualLaunch scrollYProgress={smoothProgress} />
             </div>
           </div>
         </div>
