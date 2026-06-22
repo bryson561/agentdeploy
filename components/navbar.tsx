@@ -5,6 +5,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bot, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { GlassNavPill, type GlassNavItem } from "@/components/ui/glass-nav-pill";
+
+const navLinks: GlassNavItem[] = [
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "Pricing", href: "/pricing" },
+];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +32,7 @@ export function Navbar() {
       )}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="relative flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2.5">
             <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
               <Bot className="w-4 h-4 text-white" />
@@ -36,19 +42,8 @@ export function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
-            {[
-              { label: "How It Works", href: "/how-it-works" },
-              { label: "Pricing", href: "/pricing" },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm text-white/60 hover:text-white transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <nav className="hidden md:block absolute left-1/2 -translate-x-1/2">
+            <GlassNavPill items={navLinks} />
           </nav>
 
           <div className="hidden md:block">
@@ -79,10 +74,7 @@ export function Navbar() {
             className="md:hidden bg-black/95 border-b border-white/[0.06] overflow-hidden"
           >
             <div className="px-4 py-4 space-y-1">
-              {[
-                { label: "How It Works", href: "/how-it-works" },
-                { label: "Pricing", href: "/pricing" },
-              ].map((link) => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
