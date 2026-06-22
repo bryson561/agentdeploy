@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { GlassNavPill, type GlassNavItem } from "@/components/ui/glass-nav-pill";
 
 const navLinks: GlassNavItem[] = [
+  { label: "Home", href: "/" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
 ];
