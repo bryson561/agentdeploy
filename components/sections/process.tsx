@@ -26,7 +26,7 @@ const steps = [
     number: "04",
     icon: Bell,
     title: "Leads Hit Your Phone & Email",
-    body: "Every captured lead is sent to you in real time via text and email. No app to check. No dashboard to log into. Just instant notifications.",
+    body: "Every captured lead reaches you in real time — by email and an instant push notification on your phone. No dashboard to log into; you'll know the second someone's interested. And you can reply to any conversation yourself, right from your phone.",
   },
   {
     number: "05",

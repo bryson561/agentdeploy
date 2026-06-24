@@ -25,7 +25,7 @@ const details = [
   },
   {
     title: "What do lead notifications look like?",
-    body: "You get a text and email the moment a lead is captured. The message includes the customer's name, contact info, and a summary of what they're looking for — so you can call back informed.",
+    body: "You get an email and an instant push notification the moment a lead is captured — with the customer's name, contact info, and a summary of what they're looking for, so you can call back informed. And any conversation the AI is having, you can jump into and reply to yourself, right from your phone.",
   },
   {
     title: "What does ongoing management include?",
