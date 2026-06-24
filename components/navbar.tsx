@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Bot, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { GlassNavPill, type GlassNavItem } from "@/components/ui/glass-nav-pill";
 
@@ -34,13 +34,13 @@ export function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="relative flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
-              <Bot className="w-4 h-4 text-white" />
-            </div>
-            <span className="text-white font-semibold tracking-tight">
-              AgentDeploy
-            </span>
+          <Link href="/" className="flex items-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/agentdeploy-logo.svg"
+              alt="AgentDeploy"
+              className="h-8 w-auto"
+            />
           </Link>
 
           <nav className="hidden md:block absolute left-1/2 -translate-x-1/2">
