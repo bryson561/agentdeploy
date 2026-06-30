@@ -18,8 +18,8 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 // ── Stripe payment links (subscription + $149 setup fee bundled) ──
-const STRIPE_STARTER = "https://buy.stripe.com/test_dRm8wOaxdc242Sv27XbAs00";
-const STRIPE_GROWTH  = "https://buy.stripe.com/test_bJebJ07l12ru50D4g5bAs01";
+const STRIPE_STARTER = "https://buy.stripe.com/dRmeVd2kEgtjdMc7CDdby01";
+const STRIPE_GROWTH  = "https://buy.stripe.com/9B6bJ19N65OF6jKcWXdby00";
 const STRIPE_PRO     = "https://buy.stripe.com/dRm8wP7EYa4VcI8bSTdby03";
 
 const steps = [
