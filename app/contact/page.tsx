@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
 // ── Stripe payment links (subscription + $149 setup fee bundled) ──
 const STRIPE_STARTER = "https://buy.stripe.com/test_dRm8wOaxdc242Sv27XbAs00";
 const STRIPE_GROWTH  = "https://buy.stripe.com/test_bJebJ07l12ru50D4g5bAs01";
-const STRIPE_PRO     = "https://buy.stripe.com/test_9B6eVceNt6HKbp1cMBbAs02";
+const STRIPE_PRO     = "https://buy.stripe.com/dRm8wP7EYa4VcI8bSTdby03";
 
 const steps = [
   {
