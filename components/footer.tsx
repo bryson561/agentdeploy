@@ -29,6 +29,14 @@ export function Footer() {
             <div className="space-y-3">
               <p className="text-white/20 text-xs uppercase tracking-widest">Company</p>
               <Link href="/contact" className="block hover:text-white transition-colors">Get Started</Link>
+              <a
+                href="https://billing.stripe.com/p/login/9B6bJ19N65OF6jKcWXdby00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-white transition-colors"
+              >
+                Manage Subscription
+              </a>
             </div>
           </nav>
         </div>
