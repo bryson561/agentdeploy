@@ -1,7 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, ArrowDownRight, Phone } from "lucide-react";
+import { Sparkles, Phone, MessageCircle } from "lucide-react";
+
+function openChatWidget() {
+  const cw = document.querySelector("chat-widget");
+  const bubble = cw?.shadowRoot?.querySelector<HTMLElement>(
+    ".lc_text-widget--bubble"
+  );
+  bubble?.click();
+}
 
 export function DemoCalloutSection() {
   return (
@@ -26,7 +34,7 @@ export function DemoCalloutSection() {
           </h2>
 
           <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/55">
-            Everything below is live — built for{" "}
+            Both are live — built for{" "}
             <span className="font-medium text-white/80">
               Summit Heating &amp; Cooling
             </span>
@@ -36,24 +44,29 @@ export function DemoCalloutSection() {
             <span className="font-medium text-white/80">your</span> business.
           </p>
 
-          {/* Primary CTA — call the AI phone agent */}
-          <a
-            href="tel:+15612207136"
-            className="inline-flex items-center gap-2.5 rounded-xl bg-emerald-600 px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-emerald-500"
-          >
-            <Phone className="h-5 w-5" />
-            Call the AI phone agent — (561) 220-7136
-          </a>
-          <p className="mt-3 text-sm text-white/45">
-            📞 A live demo line for a sample HVAC company — call it and hear the AI
+          {/* Two equal CTAs — call + chat */}
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href="tel:+15612207136"
+              className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-emerald-600 px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-emerald-500 sm:w-auto"
+            >
+              <Phone className="h-5 w-5" />
+              Call the AI — (561) 220-7136
+            </a>
+            <button
+              type="button"
+              onClick={openChatWidget}
+              className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-emerald-500/40 px-7 py-4 text-base font-semibold text-emerald-300 transition-colors hover:bg-emerald-500/10 sm:w-auto"
+            >
+              <MessageCircle className="h-5 w-5" />
+              Chat with the AI
+            </button>
+          </div>
+
+          <p className="mt-4 text-sm text-white/45">
+            Live demo lines for a sample HVAC company — call or chat, hear the AI
             answer, take your info, and book a job in real time.
           </p>
-
-          {/* Secondary — chat */}
-          <div className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-emerald-400">
-            <span>Prefer to type? Tap the chat bubble, bottom-right</span>
-            <ArrowDownRight className="h-4 w-4 animate-bounce" />
-          </div>
         </motion.div>
       </div>
     </section>
