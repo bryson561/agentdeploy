@@ -17,7 +17,7 @@ const details = [
   },
   {
     title: "How is the agent trained?",
-    body: "We use your intake form data to write a structured knowledge base. The agent is then configured through Chatbase — an enterprise-grade AI platform — and tested before going live on your site.",
+    body: "We use your intake form data to write a structured knowledge base. The agent is then configured on an enterprise-grade AI platform and tested before going live on your site.",
   },
   {
     title: "How does the chat widget get on my website?",
